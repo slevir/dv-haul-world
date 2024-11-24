@@ -4,11 +4,11 @@
 
 ## About The Mod
 
-This is a mod for the game Derail Valley, which disables shunting jobs and allows to generate a lot more of Freight
+This is a mod for the game Derail Valley which disables shunting jobs and allows to generate a lot more of Freight
 Haul jobs and Logistic Haul jobs instead.
 
 This goal is achieved by two major changes:
-- Disabling the generation of shunting jobs in principe
+- Disabling the generation of shunting jobs in principle
 - Allowing freight hauls to start (and optionally end) on storage tracks
 
 Since the game needs to reserve track space to generate jobs, doing this results in a lot more Freight Haul jobs, with
