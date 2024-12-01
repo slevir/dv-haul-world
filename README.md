@@ -17,6 +17,7 @@ some Logistic Hauls mixed in.
 ## Settings
 ### Minimum job train length
 Pretty self-explanatory, the game won't generate jobs shorter than this value. Useful if you want longer trains.
+
 Default is `3`.
 
 ### Allow multiple freight hauls per track
@@ -24,12 +25,20 @@ Normally the game only generates one job per input and output track. This is fin
 costs, but you also can't have more jobs than tracks! For a station like SM, which only has 2 input tracks, this means
 you won't be able to bring more than 2 jobs at any single time. Enabling this allows generating multiple jobs for a
 single track, as well generating FH jobs ending on storage tracks (as it's hard to guarantee them to be empty otherwise).
+
 Enabling this also removes the guarantee that job destination track will be empty. Default is enabled.
 
 ### Generate jobs on input tracks too!
 I've decided to leave input tracks out of job generation by default, as it might make moving around station difficult
 otherwise. However, if you want *even more* jobs, enable this, and jobs will generate with cargo starting on Input tracks
-too. Enabling this also removes the guarantee that job destination track will be empty. Default is disabled.
+too. 
+
+Enabling this also removes the guarantee that job destination track will be empty. Default is disabled.
+
+### Disable shunting unload chain jobs
+This disables generating shunting unload jobs after you have finished the freight haul jobs for the same cars. It doesn't hurt to have this on, and in fact it's on by default, but the implementation is somewhat brittle, so turn this off if you have problems with job generation.
+
+Default is enabled.
 
 
 ## Building
