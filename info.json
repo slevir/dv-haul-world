@@ -1,6 +1,6 @@
 {
 	"Id": "HaulWorld",
-	"Version": "0.1",
+	"Version": "0.2",
 	"DisplayName": "HaulWorld",
 	"Author": "silver/slevir",
 	"EntryMethod": "HaulWorld.HaulWorld.Load",

@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Reflection;
+using CommandTerminal;
+using DV.Logic.Job;
+using DV.Utils;
 using HarmonyLib;
 using UnityModManagerNet;
 
@@ -42,5 +46,15 @@ namespace HaulWorld
 		{
 			settings.Save(modEntry);
 		}
+
+		#if DEBUG
+		[RegisterCommand("FinishJobs", Help = "Finishes all active jobs", MaxArgCount = 0, MinArgCount = 0)]
+		public static void FinishJobs(CommandArg[] args)
+		{
+			var jobs = SingletonBehaviour<JobsManager>.Instance.currentJobs.ToList();
+			foreach(var job in jobs)
+				SingletonBehaviour<JobsManager>.Instance.CompleteTheJob(job);
+		}
+		#endif
 	}
 }

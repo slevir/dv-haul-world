@@ -14,6 +14,9 @@
 
 	<!-- Unity -->
 	<ItemGroup>
+		<Reference Include="CommandTerminal">
+		  <HintPath>..\..\..\SteamLibrary\SteamApps\common\Derail Valley\DerailValley_Data\Managed\CommandTerminal.dll</HintPath>
+		</Reference>
 		<Reference Include="DV.ThingTypes">
 		  <HintPath>..\..\..\SteamLibrary\SteamApps\common\Derail Valley\DerailValley_Data\Managed\DV.ThingTypes.dll</HintPath>
 		</Reference>
